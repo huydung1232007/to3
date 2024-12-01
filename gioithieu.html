@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THPT Tam Phước</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .hero {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .hero img {
+        width: 100%;
+        height: auto;
+      }
+
+      .hero-text {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+      }
+
+      .hero-text h1 {
+        margin: 0;
+        font-size: 48px;
+        font-weight: 700;
+      }
+
+      .hero-text p {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 400;
+        color: #00a651;
+      }
+
+      .breadcrumb {
+        padding: 20px;
+        background-color: #f8f9fa;
+      }
+
+      .breadcrumb a {
+        text-decoration: none;
+        color: #00a651;
+      }
+
+      .breadcrumb span {
+        color: #6c757d;
+      }
+
+      .content {
+        padding: 40px 20px;
+      }
+
+      .content h2 {
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .content .underline {
+        width: 50px;
+        height: 3px;
+        background-color: #00a651;
+        margin-bottom: 20px;
+      }
+
+      .content .columns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+
+      .content .column {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .content .column p {
+        font-size: 20px;
+        line-height: 1.6;
+        color: #6c757d;
+      }
+
+      .info-section {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 40px 20px;
+      }
+
+      .info-section .info-columns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .info-section .info-column {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+      }
+
+      .info-section .info-column i {
+        font-size: 40px;
+        color: #0069a6;
+        margin-bottom: 10px;
+      }
+
+      .info-section .info-column h3 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .info-section .info-column p {
+        font-size: 18px;
+        line-height: 1.6;
+      }
+
+      .tour-section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px 20px 20px 100px;
+        gap: 20px;
+      }
+
+      .tour-section .tour-text {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .tour-section .tour-text h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      .tour-section .tour-text p {
+        font-size: 20px;
+        line-height: 1.6;
+        color: #6c757d;
+      }
+
+      .tour-section .tour-image {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .tour-section .tour-image img {
+        width: 80%;
+        height: auto;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head"></div>
+    <div class="header">
+      <img src="logo.png" alt="Logo" width="70px" />
+      <div class="nav">
+        <div class="title">
+          <a href="index.html" class="title-vi">THPT Tam Phước</a>
+          <a href="index.html" class="title-en">Tam Phuoc Highschool</a>
+        </div>
+        <div class="menu">
+          <a href="#">Giới thiệu</a>
+          <a href="index.html#Sknb">Sự kiện nổi bật</a>
+          <a href="giaovien.html">Cơ cấu tổ chức</a>
+          <div class="dropdown">
+            <a class="dropdown-menu" href="">Danh sách lớp</a>
+            <div class="dropdown-content">
+              <p href="">Khối 10<box-icon name="chevron-right"></box-icon></p>
+              <p href="">Khối 11<box-icon name="chevron-right"></box-icon></p>
+              <div class="dropdown2">
+                <p href="">
+                  Khối 12<box-icon
+                    name="chevron-right"
+                    class="dropdown-menu2"
+                  ></box-icon>
+                </p>
+                <div class="dropdown-content2">
+                  <p id="12A1">12A1</p>
+                  <p href="">12A2</p>
+                  <p href="">12A3</p>
+                  <p href="">12A4</p>
+                  <p href="">12A5</p>
+                  <p href="">12A6</p>
+                  <p href="">12A7</p>
+                  <p href="">12A8</p>
+                  <p href="">12A9</p>
+                  <p href="">12A10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="dangnhap.html">Đăng Nhập</a>
+          <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Chưa sử dụng được nhé">
+          </div>
+        </div>
+      </div>
+      <img src="background.jpg" alt="background" class="background" />
+    </div>
+    <div class="container1">
+      <div class="content">
+        <div class="columns">
+          <div class="columns">
+            <h1 class="title">Giới thiệu</h1>
+          </div>
+          <div class="column">
+            <p>
+              Tuổi học trò là những trang giấy trắng nhưng trôi qua rất nhanh.
+              Chẳng mấy chốc mà các em đã bước vào cánh cổng cấp 3 để tự đi trên
+              đôi chân của mình. Môi trường cấp 3 có vai trò rất quan trọng đối
+              với mỗi cuộc đời học sinh nên việc lựa chọn một ngôi trường tốt
+              trước khi theo học rất quan trọng. Đối với các học sinh trên địa
+              bàn tỉnh Đồng Nai không thể bỏ qua ngôi trường THPT Tam Phước.
+            </p>
+          </div>
+          <div class="column">
+            <p>
+              Trường THPT Tam Phước Tỉnh Đồng Nai được thành lập vào ngày 21
+              tháng 09 năm 2010. Mặc dù đây là một ngôi trường có tuổi đời ít
+              nhưng đã gặt hái được nhiều thành tích đáng kể tạo dựng được niềm
+              tin đối với phụ huynh học sinh trên địa bàn tỉnh nhà.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="info-section">
+        <div class="info-columns">
+          <div class="info-column">
+            <i class="fas fa-award"> </i>
+            <h3>Điểm tuyển sinh đầu vào</h3>
+            <p></p>
+            <p>
+              Điểm tuyển sinh đầu vào là tiêu chí quan trọng để đánh giá trường
+              THPT Tam Phước và xác định sự phù hợp với khả năng học sinh. Điểm
+              chuẩn dựa trên kết quả thi cuối cấp do Sở Giáo dục Đồng Nai tổ
+              chức, với mức điểm cụ thể trong các năm gần đây.
+            </p>
+            <ul
+              style="
+                list-style-type: disc;
+                display: flex;
+                align-items: left;
+                justify-content: center;
+                text-align: left;
+                gap: 20px;
+                font-size: 15px;
+              "
+            >
+              <li>Năm học <br />2018 - 19: <br />21,75 điểm</li>
+              <li>Năm học <br />2019 - 20: <br />21,5 điểm</li>
+              <li>Năm học <br />2020 - 21: <br />21,25 điểm</li>
+              <li>Năm học <br />2021 - 22: <br />27 điểm</li>
+            </ul>
+          </div>
+          <div class="info-column">
+            <i class="fas fa-university"> </i>
+            <h3>Cơ sở hạ tầng</h3>
+            <p>
+              Trường THPT Tam Phước được đánh giá tốt nhờ cơ sở vật chất hiện
+              đại. Từ một ngôi trường bán tôn, nay trường đã trang bị đầy đủ các
+              phòng học rộng rãi với bàn ghế, quạt mát, đèn điện. Ngoài ra, các
+              phòng bộ môn như Tin học, Hóa học, Sinh học,... và thư viện đa
+              dạng giúp học sinh tiếp cận thực tế và mở rộng kiến thức. Khuôn
+              viên trường rộng rãi, nhiều cây xanh, tạo môi trường học tập thoải
+              mái.
+            </p>
+          </div>
+          <div class="info-column">
+            <i class="fas fa-money-bill"></i>
+            <h3>Học phí</h3>
+            <p>
+              Học phí trường THPT Tam Phước được quy định bởi Sở Giáo dục tỉnh
+              Đồng Nai, phù hợp và thay đổi theo từng năm. Phụ huynh có thể liên
+              hệ hotline hoặc email trường để biết thông tin chi tiết. Trường
+              còn tổ chức học bổng hỗ trợ học sinh khó khăn, giúp các em tiếp
+              tục học tập.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="tour-section">
+        <div class="tour-text">
+          <h3>Đánh giá tổng quan</h3>
+          <p>
+            Ngay từ khi mới thành lập Ban giám hiệu nhà trường đã phối hợp với
+            các cấp ban ngành để nâng cao chất lượng giáo dục của nhà trường.
+            Mặc dù đi từ ngôi trường bán công đi lên nhưng chất lượng giáo dục
+            của trường không hề thua kém các trường khác trong tình. Trong những
+            năm gần đây tỷ lệ học sinh đỗ tốt nghiệp THPT trên 90% trở lên lên,
+            tỷ lệ học sinh đỗ vào các trường Cao Đẳng, Đại Học khá cao. Ngoài xa
+            trường cũng có nhiều học sinh đạt được cách giải thành tích cao
+            trong các kỳ thi học thuật do thành phố phố tỉnh tổ chức.
+          </p>
+        </div>
+        <div class="tour-image">
+          <img
+            src="https://r73troypb4obj.vcdn.cloud/website02/uploads/pictures/628dda5b1a1b855737a80910/content_danh-gia-truong-thpt-tam-phuoc-dong-nai-co-tot-khong-1.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="map-and-logo">
+        <img src="logo.png" alt="Logo" width="70px" />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3597542413117!2d106.92481721064522!3d10.860218189249045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752010a3cb1879%3A0xa683c954da3a5e33!2zVHLGsOG7nW5nIFRIUFQgVGFtIFBoxrDhu5tj!5e0!3m2!1svi!2s!4v1733044710100!5m2!1svi!2s"
+          width="200"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="copyright">
+        <p class="copyright-1">Bản quyền thuộc về Tổ 3 - Trường THPT Tam Phước</p>
+        <p class="copyright-2">
+          Địa chỉ: QL51, Xã Tam Phước, Thành Phố Biên Hòa, Tỉnh Đồng Nai
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+    const button1 = document.getElementById("12A1");
+    button1.addEventListener("click", function () {
+      window.location.href = "https://www.facebook.com/A1K22dthvlllll";
+    });
+  </script>
+</html>

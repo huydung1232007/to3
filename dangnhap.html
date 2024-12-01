@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THPT Tam Phước</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .container1 {
+        margin-top: unset;
+      }
+      form {
+        border: 3px solid #f1f1f1;
+        margin: 100px;
+        border-radius: 25px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        width: 50%;
+        background-color: #fff;
+      }
+      .container input[type="text"],
+      .container input[type="password"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #04aa6d;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+      .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+      }
+      .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+      }
+      img.avatar {
+        width: 40%;
+        border-radius: 50%;
+      }
+      .container {
+        padding: 40px;
+      }
+      span.psw {
+        float: right;
+        padding-top: 16px;
+      }
+      @media screen and (max-width: 300px) {
+        span.psw {
+          display: block;
+          float: none;
+        }
+        .cancelbtn {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head"></div>
+    <div class="header">
+      <img src="logo.png" alt="Logo" width="70px" />
+      <div class="nav">
+        <div class="title">
+          <a href="index.html" class="title-vi">THPT Tam Phước</a>
+          <a href="index.html" class="title-en">Tam Phuoc Highschool</a>
+        </div>
+        <div class="menu">
+          <a href="gioithieu.html">Giới thiệu</a>
+          <a href="index.html#Sknb">Sự kiện nổi bật</a>
+          <a href="giaovien.html">Cơ cấu tổ chức</a>
+          <div class="dropdown">
+            <a class="dropdown-menu" href="">Danh sách lớp</a>
+            <div class="dropdown-content">
+              <p href="">Khối 10<box-icon name="chevron-right"></box-icon></p>
+              <p href="">Khối 11<box-icon name="chevron-right"></box-icon></p>
+              <div class="dropdown2">
+                <p href="">
+                  Khối 12<box-icon
+                    name="chevron-right"
+                    class="dropdown-menu2"
+                  ></box-icon>
+                </p>
+                <div class="dropdown-content2">
+                  <p id="12A1">12A1</p>
+                  <p href="">12A2</p>
+                  <p href="">12A3</p>
+                  <p href="">12A4</p>
+                  <p href="">12A5</p>
+                  <p href="">12A6</p>
+                  <p href="">12A7</p>
+                  <p href="">12A8</p>
+                  <p href="">12A9</p>
+                  <p href="">12A10</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#">Đăng Nhập</a>
+          <div class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Chưa sử dụng được nhé">
+          </div>
+        </div>
+      </div>
+      <img src="background.jpg" alt="background" class="background" />
+    </div>
+    <div class="container1">
+      <img src="background2.jpg" alt="" class="background2">
+      <form action="/index.html">
+        <div class="imgcontainer" style="display: flex; flex-direction: row; justify-content: center; gap: 30px;">
+          <img src="logo.png" alt="Avatar" class="avatar" style="width: 10%" />
+          <div class="title-1" style="display: flex; flex-direction: column; justify-content: center; text-align: left; content: unset;">
+            <a href="index.html" class="title-vi" style="text-decoration: none; color: #3856A9; font-size: 40px;">Tổ 3</a>
+            <a href="index.html" class="title-en" style="text-decoration: none; color: #3856A9; font-size: 40px;">THPT Tam Phước</a>
+          </div>
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Nhập tên đăng nhập"
+            name="uname"
+            required
+          />
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Nhập mật khẩu đúng"
+            name="psw"
+            required
+          />
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember me
+          </label>
+          <button type="submit">Đăng Nhập</button>
+          
+          <p style="margin-top: 10px;">Bạn chưa có tài khoản à ? <a href="dangky.html" style="text-decoration: none; color: #3856A9;">Đăng ký ngay</a></p>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <div class="map-and-logo">
+          <img src="logo.png" alt="Logo" width="70px">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3597542413117!2d106.92481721064522!3d10.860218189249045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752010a3cb1879%3A0xa683c954da3a5e33!2zVHLGsOG7nW5nIFRIUFQgVGFtIFBoxrDhu5tj!5e0!3m2!1svi!2s!4v1733044710100!5m2!1svi!2s" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="copyright">
+          <p class="copyright-1">Bản quyền thuộc về Tổ 3 - Trường THPT Tam Phước</p>
+          <p class="copyright-2">Địa chỉ: QL51, Xã Tam Phước, Thành Phố Biên Hòa, Tỉnh Đồng Nai</p>
+      </div>
+  </div>
+  </body>
+  <script>
+    const button1 = document.getElementById("12A1");
+    button1.addEventListener("click", function () {
+      window.location.href = "https://www.facebook.com/A1K22dthvlllll";
+    });
+  </script>
+</html>
